@@ -309,15 +309,6 @@ class ClassesTest : AbstractModelTest("/src/main/kotlin/classes/Test.kt", "class
         }
     }
 
-//    @Test fun companionObjectExtension() {
-//        checkSourceExistsAndVerifyModel("testdata/classes/companionObjectExtension.kt", defaultModelConfig) { model ->
-//            val pkg = model.members.single()
-//            val cls = pkg.members.single { it.name == "Foo" }
-//            val extensions = cls.extensions.filter { it.kind == NodeKind.CompanionObjectProperty }
-//            assertEquals(1, extensions.size)
-//        }
-//    }
-
     @Test
     fun secondaryConstructor() {
         inlineModelTest(
